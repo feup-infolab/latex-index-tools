@@ -16,8 +16,8 @@ After the CSV file containing concepts and matches is prepared, we can automatic
 ```shell
 ./index_concepts.py -i thesis.tex -c reviewed_concepts.csv \
   -o /tmp/output_dir -e arsclassica-settings.tex \
-	-e listings-settings.tex -e hyphenations.tex -e "FrontBackMatter/*.tex" \
-	-m stop -m dist
+  -e listings-settings.tex -e hyphenations.tex -e "FrontBackMatter/*.tex" \
+  -m stop -m dist
 ```
 
 All LaTeX files within the `thesis.tex` directory are considered. We do not parse the main LaTeX to find dependencies. Instead, we simply consider all `*.tex` files, recursively, excluding those that do not matter using the `-e` option. No chances will be done to your files. Instead, a new copy will be created in the directory pointed out by `-o`. We also provide heuristics to avoid overcrowding the back-of-the-book index:
