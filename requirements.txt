@@ -1,0 +1,4 @@
+pyahocorasick==1.1.0
+nltk==3.4.5
+python-rake==1.4.5
+yake==0.4.3
