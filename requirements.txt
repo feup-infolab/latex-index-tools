@@ -1,4 +1,4 @@
-pyahocorasick==1.1.0
-nltk==3.4.5
+git+https://github.com/WojciechMula/pyahocorasick.git@iter_long       # pyahocorasick==1.1.0
 python-rake==1.4.5
 yake==0.4.3
+nltk==3.4.5
