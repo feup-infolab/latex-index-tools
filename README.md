@@ -2,6 +2,26 @@
 
 LaTeX index generation tools for dissertations, theses, books, or reports.
 
+## Instalation
+
+Requirements:
+- python 3.x (tested using python 3.7.6)
+- pip (tested using pip 20.0.2)
+- detex
+
+Install dependencies using:
+```shell
+pip install -r requirements.txt
+```
+
+Dependencies:
+- pyahocorasick 1.1.0 (we use `iter_long()` from this branch: `git+https://github.com/WojciechMula/pyahocorasick.git@iter_long`)
+- python-rake 1.4.5
+- yake 0.4.3
+- nltk 3.4.5
+
+## Usage
+
 While nothing replaces the manual selection of concepts to add to your back-of-the-book index, we can make this job easier by relying on automatic tools. LaTeX Index Tools enables you to automatically extract the most salient concepts, via keyword extraction, providing an easy way to edit them and add additional matching expressions for the same index entry:
 
 ```shell
